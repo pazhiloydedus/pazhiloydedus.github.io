@@ -53,16 +53,23 @@
         <button class="button button1" type="submit" onclick="myImg()">Паказать голые тити</button>
         <button class="button button1" type="submit" onclick="window.open('changelog.html', '_blank');">Паказать ченжлог</button>
       </div>
-      <img id="1" style="display:none;" src="files/rickroll-roll.gif">
+      <img id="random_gif" style="display:none;" src="">
 
       <script>
+        const gifs = [
+          'files/rickroll-roll.gif',
+          'files/bibizyan_computer.gif',
+          'files/bibizyan_water.gif'
+        ];
         function myImg() {
-          let elem = document.getElementById('1');
+          let elem = document.getElementById('random_gif');
           let style = getComputedStyle(elem);
           if (style.display === 'none') {
-            elem.style.display='block';
-            } else if (style.display !== 'none') {
-            elem.style.display='none';
+            let randomGif = gifs[Math.floor(Math.random() * gifs.length)];
+            elem.src = randomGif;
+            elem.style.display = 'block';
+          } else {
+            elem.style.display = 'none';
           }
         }
       </script>
