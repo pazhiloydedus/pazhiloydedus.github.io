@@ -13,10 +13,10 @@
     cursor: pointer;
 }
 
-.rickroll_btn {
+.button1 {
   background-color: white;
   color: black;
   border: 2px solid #e7e7e7;
 }
 
-.rickroll_btn:hover {background-color: #e7e7e7;}
+.button1:hover {background-color: #e7e7e7;}
