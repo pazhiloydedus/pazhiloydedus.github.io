@@ -28,6 +28,11 @@
     }
 
     .button1:hover {background-color: #e7e7e7;}
+
+    .button-container {
+      display: inline-flex;
+      gap: 10px; /* Space between buttons */
+    }
     </style>
     
     <title>группа 05-206 лучшая</title>
@@ -40,7 +45,10 @@
       <img src="files/bibizyan.jpg" alt="Это бибизян">
     </header>
     <main>
-      <button class="button button1" type="submit" onclick="myImg()">Показать голые тити</button>
+      <div class="button-container">
+        <button class="button button1" type="submit" onclick="myImg()">Показать голые тити</button>
+        <button class="button button1" type="submit" onclick="window.location = 'https://google.com';">Ченжлог</button>
+      </div>
       <img id="gif_1" style="display:none;" src="files/rickroll-roll.gif">
 
       <script>
