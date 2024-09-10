@@ -53,16 +53,16 @@
         <button class="button button1" type="submit" onclick="myImg()">Паказать голые тити</button>
         <button class="button button1" type="submit" onclick="window.open('changelog.html', '_blank');">Паказать ченжлог</button>
       </div>
-      <img id="gif1" style="display:none;" src="files/rickroll-roll.gif">
+      <img id="1" style="display:none;" src="files/rickroll-roll.gif">
 
       <script>
         function myImg() {
-          let elem = document.getElementById('gif1');
+          let elem = document.getElementById('1');
           let style = getComputedStyle(elem);
           if (style.display === 'none') {
-            document.getElementById('gif_1').style.display='block';
+            elem.style.display='block';
             } else if (style.display !== 'none') {
-            document.getElementById('gif_1').style.display='none';
+            elem.style.display='none';
           }
         }
       </script>
